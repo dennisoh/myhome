@@ -1,68 +1,26 @@
 <html>
 <head>
 <title>My Home</title>
-<style>
-
-#wrapper_for_screen {
-}
-
-#wrapper {
-	background-color: #fff;
-	margin: 0 auto;
-	width: 1200px;
-}
-
-
-#google_search_box {
-	text-align: center;
-	font-size: 1.8em;
-}
-
-.section_heading_0 {
-	font-size: 2.0em;
-}
-
-.favicon_img_0 {
-	width: 32px;
-	height: 32px;
-}
-
-#wrapper_t {
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-}
-
-#google_search {
-	margin: 0em;
-	font: -webkit-small-control;
-	color: initial;
-	letter-spacing: normal;
-	word-spacing: normal;
-	text-transform: none;
-	text-indet: 0px;
-	text-shadow: none;
-	display: inline-block;
-	text-align: start;	
-	border: 2px inset;
-	background-color: white;
-	width: 610px;
-	height: 26px;
-}
-
-.article_of_links {
-	float: left;
-	border: solid 1px;
-	padding: 32px 32px 32px 32px;
-}
-
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="./myhome.css">
 <script>
+// for each <a>, add target="_blank"
+function addTargetAttributesToAllLinks() {
+        var el = document.body;
+        var links = el.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+                links[i].target = '_blank';
+        }
+}
+
+// Focus on google search editbox
+function focusOnGoogleSearch() {
+        var el = document.getElementById('google_search');
+        el.focus();
+}
+
 function onLoad() {
-	var el = document.getElementById('input_for_google_search_box');
-	el.focus();
+        addTargetAttributesToAllLinks();
+        focusOnGoogleSearch();
 }
 </script>
 </head>
@@ -72,50 +30,49 @@ function onLoad() {
 <div id="wrapper_for_screen">
 <div id="wrapper">
 
-<div id="wrapper_t">
-<div id="google_search_box">
-<form method="get" action="http://www.google.com/search"> <input id="google_search" autocomplete="off" tabindex="-1" aria-hidden="true" id="input_for_google_search_box" type="text" name="q" size="31" maxlength="255" value="" /> <input type="submit" value="Google Search" />
+<div id="top_wrapper_t">
+<p class="heading_title_0">MY HOME</p>
 </div>
+<div id="wrapper_t">
+  <span>Google</span>
+  <span id="google_search_box">
+    <form method="get" action="http://www.google.com/search"> <input id="google_search" autocomplete="off" tabindex="-1" aria-hidden="true" type="text" name="q" size="31" maxlength="255" value="" /> <input type="submit" value="Google Search" />
+  </span>
 </div>
 
 <article class="article_of_links">
-<p class="section_heading_0">Current</p>
-<ol>
+<p class="section_heading_current_0">Current</p>
+<ul>
 <li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/1.png"></img></span>
-<span class="item_0"><a href="http://165.213.198.90/uiframework-gerrit/demos/demo6_loading_time/">HUB / demo6</a></span>
+<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/1.png"></img>--></span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/jira/browse/?filter=11607">JIRA</a></span>
+</li>
+<li>
+<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/1.png"></img>--></span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/confluence/display/CBWEBCOREC/Chromium-EFL+WebCore+Home">WebCore</a></span>
+</li>
+<li>
+<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/1.png"></img>--></span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/gerrit/#/">Gerrit</a></span>
 </li>
 <li>
 <span class="favicon_0"><!-- <img class="favicon_img_0" src="./res/2.png"></img>--> </span>
-<span class="item_0"><a href="http://10.251.52.173:8888">Team WIKI</a></span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/confluence/">CONFLUENCE</a></span>
 </li>
 <li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/3.png"></img></span>
-<span class="item_0"><a href="http://10.251.52.177:8081/">Team gerrit code review</a></span>
+<span class="favicon_0"><!-- <img class="favicon_img_0" src="./res/2.png"></img>--> </span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/confluence/pages/viewpage.action?pageId=6982781">COMMAND LINES</a></span>
 </li>
 <li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/4.png"></img> --> </span>
-<span class="item_0"><a href="http://10.251.52.173:8070/secure/Dashboard.jspa">Team JIRA</a></span>
+<span class="favicon_0"><!-- <img class="favicon_img_0" src="./res/2.png"></img>--> </span>
+<span class="item_current_0"><a href="http://suprem.sec.samsung.net/confluence/pages/viewpage.action?pageId=6982781">PERSONAL WIKI</a></span>
 </li>
-<li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/5.png"></img>--></span>
-<span class="item_0"><a href="http://10.251.52.173:8888">Team fisheye</a></span>
-</li>
-<li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/6.png"></img>--></span>
-<span class="item_0"><a href="http://165.213.198.90/wiki/">Personal WIKI</a></span>
-</li>
-<li>
-<span class="favicon_0"><!--<img class="favicon_img_0" src="./res/7.png"></img>--></span>
-<span class="item_0"><a href="http://10.251.52.177:3000/projects/2013_blink/wiki/Wiki">Blink Team WIKI</a></span>
-</li>
-</ol>
+</ul>
 </article>
 
 <article class="article_of_links">
 <p class="section_heading_0">Search</p>
 <ul>
-<li><p><a href="http://www.google.com/">Google</a>
 <li><p><a href="http://www.wolframalpha.com/">Alpha</a>
 </ul>
 </article>
@@ -133,7 +90,7 @@ function onLoad() {
 <p class="section_heading_0">Web Tech.</p>
 <ul>
 <li><p><a href="http://www.chromestatus.com/features">http://www.chromestatus.com/features</a>
-<li><p><a href="http://blog.chromium.org/">The Chromium Blog</a>
+<li><p><a href="http://blog.chromium.org/">The Chromium Blog</a><p class="explained">Google's official blog for Chrome announcements</p>
 <li><p><a href="https://hacks.mozilla.org/articles/">Mozilla Hacks</a>
 </li>
 </ul>
@@ -145,6 +102,8 @@ function onLoad() {
 <li><p><a href="http://www.chromestatus.com/features">http://www.chromestatus.com/features</a>
 <li><p><a href="http://blog.chromium.org/">The Chromium Blog</a>
 <li><p><a href="https://hacks.mozilla.org/articles/">Mozilla Hacks</a>
+<li><p><a href="https://www.irccloud.com">IRC For #chromium, #blink</a><p class="explained">IRC channel : #blink (irc.freenode.net)</p>
+<li><p><a href="http://echelog.com/logs/browse/blink/">IRC Log For #blink</a><p class="explained"></p>
 </li>
 </ul>
 </article>
@@ -158,8 +117,45 @@ function onLoad() {
 </ul>
 </article>
 
+<article class="article_of_links">
+<p class="section_heading_0">WebCore Part Planning</p>
+<ul>
+
+<li><p><a href="https://code.google.com/p/chromium/issues/detail?id=152934">Android vs. Desktop Chrome as Web Platform</a><p class="explained">Meta bug for aligning Web Platform features between desktop and Android Chrome - https://code.google.com/p/chromium/issues/detail?id=152934</p></li>
+
+</ul>
 </div>
 </div>
+
+<article class="article_of_links">
+<p class="section_heading_0">TCT Links</p>
+<ul>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr23/Results/Automated/WebExtended/summary.xml">AUTO - wr23</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr23/Results/Manual/WebExtended/summary.xml">MANUAL - wr23</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr21/results/Automated/WebExtended/summary.xml">AUTO - wr21</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr21/results/Manual/WebExtended/summary.xml">MANUAL - wr21</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr20/Automated/WebExtended/summary.xml">AUTO - wr20</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr20/Manual/WebExtended/summary.xml">MANUAL - wr20</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr18/Automated/WebExtended/summary.xml">AUTO - wr18</a></span></p>
+</li>
+<li>
+<p><span><a href="http://106.116.62.52/~p.sikorski/BLINK-WRT/tests/wr18/Manual/WebExtended/summary.xml">MANUAL - wr18</a></span></p>
+</li>
+</ul>
+</article>
 
 </body>
 </html>
