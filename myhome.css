@@ -1,0 +1,82 @@
+#top_wrapper_t {
+  width: 800px;
+  height: 128px;
+  color: gray
+}
+
+.heading_title_0 {
+  font-size: 8.0em;
+  margin-left: 196px;
+}
+
+#wrapper_for_screen {
+}
+
+#wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+#google_search_box {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.section_heading_0 {
+  font-size: 1.6em;
+}
+
+.section_heading_current_0 {
+  font-size: 2.4em;
+}
+
+.favicon_img_0 {
+  width: 32px;
+  height: 32px;
+}
+
+.article_of_links li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: Times New Roman;
+}
+
+.item_current_0 {
+  font-size: 2.0em;
+}
+
+#wrapper_t {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+#google_search {
+  margin: 0em;
+  font: -webkit-small-control;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indet: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  border: 2px inset;
+  background-color: white;
+  width: 610px;
+  height: 26px;
+}
+
+.article_of_links {
+  float: left;
+  border: solid 1px;
+  padding: 32px 32px 32px 32px;
+}
+
+
+.explained {
+  font-size: 0.5em;
+}
